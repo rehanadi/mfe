@@ -8,6 +8,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js', // for cache busting
+    publicPath: '/container/latest/', // for loading the files from the correct path
   },
   plugins: [
     new ModuleFederationPlugin({
